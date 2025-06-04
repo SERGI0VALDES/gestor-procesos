@@ -13,7 +13,7 @@ A continuación encontrarás las instrucciones detalladas para que cualquier per
 1. Requisitos previos
 2. Estructura del proyecto
 3. Configuración del Backend (FastAPI)
-  3.1 Crear y activar el entorno virtual
+  3.1. Crear y activar el entorno virtual
   3.2 Instalar dependencias
   3.3 Variables de entorno
   3.4 Ejecutar el servidor
