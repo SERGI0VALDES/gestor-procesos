@@ -30,6 +30,7 @@ A continuación encontrarás las instrucciones detalladas para que cualquier per
 # Requisitos previos
 
 Antes de comenzar, asegúrate de contar con lo siguiente instalado en tu sistema:
+
 1. Git (para clonar el repositorio)
 2. Python 3.9+
   Se recomienda instalarlo a través de python.org o un gestor de versiones como pyenv.  
@@ -39,7 +40,7 @@ Antes de comenzar, asegúrate de contar con lo siguiente instalado en tu sistema
 5. cURL o Postman (para probar la API desde la terminal o interfaz gráfica).
 
 # Configuración del Backend (FastAPI)
-# Crear y activar el entorno virtual
+### Crear y activar el entorno virtual
 
 1. Abre una terminal y navega a la carpeta backend/:
   cd D:\gestor-procesos\backend
@@ -73,7 +74,7 @@ Instalar dependencias (Frontend)
 
 Con las dependencias instaladas y las variables configuradas, levanta el servidor de desarrollo de Vite:
 
-npm run dev
+### npm run dev
 
 # Probar la aplicación
 
