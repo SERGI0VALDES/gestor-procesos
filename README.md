@@ -13,19 +13,19 @@ A continuación encontrarás las instrucciones detalladas para que cualquier per
 1. Requisitos previos
 2. Estructura del proyecto
 3. Configuración del Backend (FastAPI)
-  3.1. Crear y activar el entorno virtual
-  3.2 Instalar dependencias
-  3.3 Variables de entorno
-  3.4 Ejecutar el servidor
-4. Configuración del Frontend (React + Vite)
-  4.1 Instalar dependencias
-  4.2 Variables de entorno
-  4.3 Ejecutar el servidor de desarrollo
-5. Probar la aplicación
-  5.1 Verificar la API con Swagger UI
-  5.2 Verificar el frontend en el navegador
-6. Scripts disponibles
-7. Notas
+4. Crear y activar el entorno virtual
+5. Instalar dependencias
+6. Variables de entorno
+7. Ejecutar el servidor
+8. Configuración del Frontend (React + Vite)
+9. Instalar dependencias
+10. Variables de entorno
+11. Ejecutar el servidor de desarrollo
+12. Probar la aplicación
+13. Verificar la API con Swagger UI
+14. Verificar el frontend en el navegador
+15. Scripts disponibles
+16. Notas.
 
 # Requisitos previos
 
