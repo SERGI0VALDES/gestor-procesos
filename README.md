@@ -58,7 +58,7 @@ De manera predeterminada, requirements.txt incluye:
 
 # Ejecutar el servidor (Backend)
 Con el entorno virtual activo y las dependencias instaladas, levanta el servidor de FastAPI usando Uvicorn:
-uvicorn main:app --reload
+## uvicorn main:app --reload
 
 # Configuración del Frontend (React + Vite)
 
