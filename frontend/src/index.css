@@ -1,0 +1,306 @@
+/* --------------------------
+   1. Estilos Globales
+   -------------------------- */
+
+/* Reset / Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* Contenedor general para centrar contenido */
+.container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos principales de cada pantalla */
+.title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+/* Texto de error (mensajes de validación, errores del backend…) */
+.error-text {
+  color: #dc3545;
+  margin-bottom: 1rem;
+}
+
+/* --------------------------
+   2. Formularios
+   -------------------------- */
+
+/* Cada grupo de input/label */
+.form-group {
+  margin-bottom: 1rem;
+}
+
+/* Etiquetas de los campos */
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #444;
+}
+
+/* Inputs de texto, select y textarea */
+.input,
+.select,
+.textarea {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+.input:focus,
+.select:focus,
+.textarea:focus {
+  border-color: #007aff;
+  outline: none;
+}
+
+/* Select desplegable */
+.select {
+  appearance: none; /* para navegadores que lo admiten */
+}
+
+/* Área de texto multi-línea */
+.textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Botones principales */
+.button-primary {
+  background-color: #007aff;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.button-primary:hover {
+  background-color: #005fcc;
+}
+
+/* Botón secundario (gris) */
+.button-secondary {
+  background-color: #6c757d;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.button-secondary:hover {
+  background-color: #5a6268;
+}
+
+/* Botón de peligro (rojo) para acciones de eliminar o rechazar */
+.button-danger {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.button-danger:hover {
+  background-color: #b02a37;
+}
+
+/* Botón “enlazado” (parecido a un link) */
+.link-button {
+  background: none;
+  border: none;
+  color: #007aff;
+  cursor: pointer;
+  padding: 0;
+  font-size: 1rem;
+  text-decoration: underline;
+}
+
+.link-button:hover {
+  color: #005fcc;
+}
+
+/* --------------------------
+   3. Tablas / Listados
+   -------------------------- */
+
+/* Tabla básica */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+}
+
+/* Encabezados de tabla */
+.table th {
+  padding: 0.75rem;
+  background-color: #f1f1f1;
+  color: #333;
+  font-weight: 600;
+  text-align: left;
+  border: 1px solid #dee2e6;
+}
+
+/* Celdas de tabla */
+.table td {
+  padding: 0.75rem;
+  border: 1px solid #dee2e6;
+  vertical-align: top;
+  color: #444;
+}
+
+/* Alternar color de filas (opcional) */
+.table tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+/* --------------------------
+   4. Tarjetas / Cards
+   -------------------------- */
+
+/* Tarjeta genérica para mostrar contenido en recuadro */
+.card {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+/* --------------------------
+   5. Botón flotante (FAB)
+   -------------------------- */
+
+/* Circulo flotante con “+” para crear nueva solicitud */
+.fab {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: #007aff;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.fab:hover {
+  background-color: #005fcc;
+}
+
+/* --------------------------
+   6. Modales
+   -------------------------- */
+
+/* Fondo semi-transparente que ocupa toda la pantalla */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999; /* Para que esté por encima de todo */
+}
+
+/* Contenido principal del modal */
+.modal-content {
+  width: 90%;
+  max-width: 500px;
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Encabezado del modal (título, etc.) */
+.modal-header {
+  margin-bottom: 1rem;
+}
+
+/* Cuerpo del modal (formulario, texto descriptivo, etc.) */
+.modal-body {
+  margin-bottom: 1rem;
+}
+
+/* Pie de modal (botones de acción) */
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+/* --------------------------
+   7. Ajustes responsivos
+   -------------------------- */
+
+/* Para pantallas muy chicas, reducimos márgenes y padding */
+@media (max-width: 480px) {
+  .container {
+    margin: 1rem;
+    padding: 0.75rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .button-primary,
+  .button-secondary,
+  .button-danger {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.75rem;
+  }
+
+  .fab {
+    width: 48px;
+    height: 48px;
+    font-size: 1.5rem;
+    bottom: 1rem;
+    right: 1rem;
+  }
+}

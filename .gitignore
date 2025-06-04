@@ -1,0 +1,15 @@
+# Ignorar entorno virtual de Python
+/backend/venv/
+
+# Ignorar dependencias de Node
+/frontend/node_modules/
+
+# Ignorar caches de Vite
+/frontend/.vite/
+
+# Archivos de configuración de IDEs
+.vscode/
+*.swp
+
+# Archivos .env con credenciales
+**/.env
